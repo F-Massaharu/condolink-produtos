@@ -26,7 +26,7 @@ class ProductServiceTest {
 	@Test
 	fun testRegisterProduct() {
 		val newProduct = Produto(name = "Novo Produto", description = "New Description", price = 20.0)
-		val savedProduct = Produto(id = "3", name = "Novo Produto", description = "New Description", price = 20.0)
+		val savedProduct = Produto(name = "Novo Produto", description = "New Description", price = 20.0)
 
 		every { produtoRepository.save(newProduct) } returns savedProduct
 
